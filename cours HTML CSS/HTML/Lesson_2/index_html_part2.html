@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>cours html partie 2</title>
+  </head>
+
+  <body>
+    <header>Ceci est la 2eme partie du cours HTML</header>
+    <section id="cours_images">
+      <h1>cours images</h1>
+      <p>Ceci est la partie 2 du cours de html sur les images.</p>
+      <img src="image1.jpeg">
+      <!--le tag image n'a pas de closure-->
+      <!--ce tag image marche si l'image est dans le meme dossier que le fichier code-->
+      <img src="images_test/image2.jpeg"><br>
+      <!--ce tag image marche avec une image dans un dossier specifique, d'ou le nom du dossier inclus-->
+      <img src="image2.jpeg" alt="photo de pruniers"><br>
+      <!--le tag alt sur une image permet d'afficher le nom de l'image meme si cette derniere ne s'affiche pas correctement (e.g car pas de nom de dossier dans le path)-->
+      <img width="700px" height="500px" src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.6435-9/69388166_10157651062548799_6311503124926300160_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=uoKNVwSswEMAX_uP0-5&tn=nFAKU6yV62y8yZCB&_nc_ht=scontent-nrt1-1.xx&oh=00_AT-TFI76lF1KBWB9_hGC_f-YFE0qvd4eRRCWWzfBO7OSxQ&oe=62568F91">
+      <br>
+      <!--je peux aussi directement copier l'url d'une photo venant d'un site (utiliser clic droit copier l'addresse de l'image)-->
+      <a href="http://www.google.com">
+        <img src="images_test/html logo.png">
+      </a>
+      <!-- au dessus, c'est comment mettre un lien sur une image-->
+    </section>
+
+    <section id="cours_listes">
+      <h1>cours listes</h1>
+      <p>Ceci est la partie 2 du cours de html sur les listes.</p>
+      <h3> Mes etapes de la journee</h3>
+      <ol>
+        <li>Je me leve</li>
+        <li>Je bois de l'eau</li>
+        <li>J'ouvre les volets</li>
+        <li>Je me lave le visage</li>
+      </ol>
+      <ul>
+        <li>Je me leve</li>
+        <li>Je bois de l'eau</li>
+        <li>J'ouvre les volets</li>
+        <li>Je me lave le visage</li>
+      </ul>
+      <ul>
+        <li>Je me leve</li>
+        <li>Je bois de l'eau</li>
+        <li>J'ouvre les volets</li>
+        <li>Je me lave le visage</li>
+        <li>
+          <ol>
+            <li>je fais couler l'eau</li>
+            <li> je mets du savon</li>
+          </ol>
+        </li>
+      </ul>
+        <!-- 1 et 2: OL (ordered list), va s'afficher avec des numeros. UL (unordered list) s'affiche en bullet points. Chaque element de la liste doit commencer par li-->
+        <!-- 3: faire une liste dans une liste-->
+    </section>
+
+    <section id="cours_listes">
+      <h1>cours attribut Style</h1>
+      <p>Ceci est la partie 2 du cours de html sur l'attribut Style qui se rapproche du CSS.</p>
+      <!-- tag (a, h1, body, title...etc.) vs attribut (href, scr, alt). Style est tres important pour le design-->
+      <p style="font-size:30px">paragraphe a 30 pixels</p>
+      <p style="font-size:20px;color:blue;background-color:yellow;text-align:center">paragraphe a 20 pixels bleu fond jaune au milieu</p>
+      <p style="color:red">paragraphe <span style="font-weight: bold">rouge</span> avec rouge en gras</p>
+      <!-- le tag span permet de designer un mot particulier (en sandwich) et le modifier avec l'attribut style dans une phrase-->
+    </section>
+
+    <section id="cours_tag_div">
+      <h1>cours sur le tag div</h1>
+      <p>Ceci est la partie 2 du cours de html sur le tag div.</p>
+       <!-- le tag div est tres utilise. Il permet de creer des sections et de les customiser (couleur, taille...etc.)-->
+      <div style="background-color:yellow">
+        <h3>Titre exemple 1</h3>
+      </div>
+      <div style="background-color:red; width: 400px; height: 400px;">
+        <a href="http://google.com">lien vers google</a>
+      </div>
+      <div style="background-color:green">
+        <ul>
+          <li>Je me leve</li>
+          <li>Je bois de l'eau</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="cours_formulaire">
+      <h1>cours sur les formulaires</h1>
+      <p>Ceci est la partie 2 du cours de html sur les formulaires.</p>
+      <form>
+        <input type="text" name="addresse">
+        <!-- mettre une case de formulaire (elle dit avoir un nom pour le serveur, eg "nom, addresse...")-->
+        <br><br>
+        <label for="addresse">addresse:</label>
+        <input id="addresse" type="text" name="addresse">
+        <!--si on veut mettre une legende devant la case de formulaire, il faut specifier un label avec un ID correspondant a la case du formulaire et y ajouter un nom-->
+        <br><br>
+        <label for="addresse2">addresse:</label>
+        <input id="addresse2" type="text" name="addresse" placeholder="veuillez entrer votre addresse">
+        <!--placeholder sert a dire quoi faire dans la case du formulaire-->
+        <br><br>
+        <textarea cols="50" rows="20"></textarea>
+        <!--textarea permet de definir un espace pour que le user puisse commenter-->
+        <br><br>
+        <input type="checkbox" id="velo" value="velo"><label for="velo">velo</label>
+        <br>
+        <input type="checkbox" value="voiture" disabled checked>voiture
+        <br>
+        <input type="checkbox" value="train" disabled>train
+        <!--on peut preselectionner une checkbox-->
+        <br><br>
+        <input type="radio" value="monsieur" name="genre" id="monsieur"><label for="monsieur">monsieur</label>
+        <br>
+        <input type="radio" value="madame" id="madame" name="genre"><label for="madame">madame</label>
+        <!--pour un choix en boutton radio, important d'avoir le meme nom sur les deux options, ici "genre"-->
+        <br><br>
+        <select name="marque de voiture"> 
+          <option value="Tesla">Tesla
+          <option value="Benz">Benz
+          <option value="Peugeot">Peugeot
+          <option value="Renault">Renault
+        </select>
+          <!--ceci est pour faire un choix en liste deroulante-->
+        <br><br>
+        <input type="datetime-local" id="event_start_at"
+        ><br>
+        <!-- pour avoir un choix dans un calendrier-->
+        <input type="submit" value="valider">
+      </form>
+    </section>
+  </body>
+</html>

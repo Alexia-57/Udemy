@@ -1,0 +1,65 @@
+
+h1
+{
+  color:blue;
+}
+
+
+p
+{
+  color:#ff8c00;
+  font-size:30px;
+  font-family: arial;
+}
+
+div div p
+{
+  color:red;
+  font-size: 20px;
+}
+
+.sp 
+{
+  font-size: 50px;
+}
+
+#unique
+{
+  font-size: 80px;
+  color:green
+}
+
+a:link
+{
+  color:pink;
+}
+
+a:visited
+{
+  color:green;
+}
+
+a:hover
+{
+  color:blue;
+}
+
+p
+{
+  display:inline-block;
+  background-color: yellow;
+  width: 200px
+}
+
+p:first-child
+{
+  font-size: 50px;
+}
+
+/*
+*
+{
+  border: 2px solid black;
+}
+*/
+
